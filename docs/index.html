@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- ESTILOS CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        header {
+            min-height: 480px;
+        }
+        header .container,
+        header .container .row {
+            min-height: inherit;
+        }
+        .img-profile {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-secondary text-white shadow">
+        <div class="container">
+            <div class="row text-center align-items-center">
+                <div class="col">
+                    <h1 class="display-1">Espejo Inteligente</h1>
+                    <h4>
+                        <span class="badge badge-success font-weight-normal">#SmartMirror</span>
+                        <span class="badge badge-danger font-weight-normal">Proyecto</span>
+                        <span class="badge badge-primary font-weight-normal">Arq. y Org. de Computadoras</span>
+                        <span class="badge badge-primary font-weight-normal">2NM31</span>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row py-5">   
+                <div class="col">
+                    <div class="section-title w-100 text-center mb-5">
+                        <h1>Integrantes</h1>
+                    </div>
+                    <div class="section-content">
+                        <div class="row justify-content-center">
+                            <div class="col-3 text-center">
+                                <div class="w-75 mx-auto">
+                                    <img src="https://raw.githubusercontent.com/pgomezm0486/arq-proyect/master/src/profile1.jpg" class="img-fluid rounded-circle border mb-3" alt="Integrante">
+                                </div>
+                                <h3>Gómez Morales Pablo Arturo</h3>                        
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-3 text-center">
+                                <div class="w-75 mx-auto">
+                                    <img src="https://raw.githubusercontent.com/pgomezm0486/arq-proyect/master/src/81621198_2691535927600754_4543309426110496768_o.jpg" class="img-fluid rounded-circle border mb-3" alt="Integrante">
+                                </div>
+                                <h3>Romero Moreno Oscar Alejandro</h3>                        
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col text-center">
+                                <ul class="list-unstyled">
+                                    <li>Arquitectura y Organización de Computadoras</li>
+                                    <li>Prof. Velasco Contreras Jose Antonio</li>
+                                    <li>Secuencia 2NM31</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-5">
+                <div class="col">
+                    <div class="section-title w-100 text-center mb-5">
+                        <h1>Descripción</h1>
+                    </div>
+                    <div class="section-content w-75 mx-auto text-justify">
+                        <p>
+                            Este es un proyecto para la materia de Arg. y Org. de Computadoras impartida por el profesor Contreras Velasco Jose Antonio en la secuencia 2NM31.
+                        </p>
+                        <p>
+                            Se trata de un sistema que simula ser un espejo otorgando funciones extras como lo es interactuar con un asistente virtual, por ejemplo, Google Assistant. Además de ello podra hacer funciones como IoT con el fin de utilizar un centro de control para casas inteligentes con un diseño más amigable y discreto para el lugar donde sea utilizado.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-5">
+                <div class="col">
+                    <div class="section-title w-100 text-center mb-5">
+                        <h1>Características</h1>
+                    </div>
+                    <div class="section-content text-center">
+                        <ul class="list-unstyled">
+                            <li><b>Dimensiones:</b> 30x40 cm</li>
+                            <li><b>SO:</b> <a href="https://magicmirror.builders/">MagicMirror²</a></li>
+                            <li><b>Micrófono:</b> Sí</li>
+                            <li><b>Cámara:</b> No</li>
+                            <li><b>Wifi:</b> Sí</li>
+                            <li><b>Sensores:</b> No</li>
+                            <li><b>Cargador:</b> Sí</li>
+                            <li><b>Almacenamiento:</b> 64GB</li>
+                            <li><b>Comandos de voz:</b> Sí</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-5">
+                <div class="col">
+                    <div class="section-title w-100 text-center mb-5">
+                        <h1>Demostraciones</h1>
+                    </div>
+                    <div class="section-content text-center">
+                        <div class="demo-uno mb-5">
+                            <p class="mb-4">Primer Review donde se muestra la primera muestra del espejo inteligente.</p>
+                            <iframe src="https://drive.google.com/file/d/1YrnGi4s5K4dIY7Hn3uvevljd3r0kpLLG/preview" width="640" height="480" class="mt-3"></iframe>
+                        </div>
+                        <div class="demo-dos mb-5">
+                            <p class="mb-4">Segundo review donde se aprecia que ya reconoce comandos de voz.</p>
+                            <iframe src="https://drive.google.com/file/d/1Z-FIv7rX889BPetHiME_XekhZF4T-JJn/preview" width="640" height="480" class="mt-3"></iframe>
+                        </div>
+                        <div class="demo-tres mb-5">
+                            <p class="mb-4">
+                                Tercer Review donde se logra enlazar con la API de Google, sin embargo muestra un bug donde no lee las credenciales registradas y las pide al momento de acceder a la API.
+                            </p>
+                            <iframe src="https://drive.google.com/file/d/1Z-CewEkUcC0LMrTbnFVLtokqEBqyFK1T/preview" width="640" height="480"></iframe>
+                        </div>
+                        <div class="demo-tres mb-5">
+                            <p>
+                                Nos retrasamos bastante ya que nos dimos cuenta tarde de que el microfono no funcionaba y ahorita con la situación se volvió dificil conseguir repuestos, pero como puede observar ya funciona lo elemental, solo falta pulir los detalles del asistente de google para poder implementar los modulos faltantes y posteriormente emplear el diseño estético.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <hr>
+    </div>
+    <footer>
+        <div class="container pb-5 pt-2">
+            <div class="row">
+                <div class="col">
+                    <h4>Enlaces de interes</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="https://magicmirror.builders/">Página de MagicMirror²</a></li>
+                        <li><a href="https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules">Modulos para MagicMirror²</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FUNCIONES JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
