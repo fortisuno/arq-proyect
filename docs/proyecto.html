@@ -12,7 +12,7 @@
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background: #111111">
         <div class="container">
-            <a class="navbar-brand" href="https://pgomezm0486.github.io/arq-proyect/">Equipo 3</a>
+            <a class="navbar-brand" href="https://pgomezm0486.github.io/arq-proyect/">Equipo 5</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -43,7 +43,7 @@
         <div class="pt-5">
             <div class="px-5 mb-5">
                 <h1 class="mb-0">Proyecto</h1>
-                <span>Espejo Inteligente <span class="badge badge-success">Equipo 3</span></span>
+                <span>Espejo Inteligente <span class="badge badge-success">Equipo 5</span></span>
             </div>
         </div>
         <div class="nav flex-column" id="nav-sidebar">
@@ -193,6 +193,9 @@
                 <div class="col-12 text-justify mb-3">
                     <h4 class="text-secondary text-left">Sistema Operativo</h4>
                     <p>
+                        Se utiliza como SO base <a href="https://www.raspberrypi.org/downloads/raspbian/">Raspbian</a> y para configurar el entorno gráfico requerimos la instalacion de <a href="https://magicmirror.builders/" class="link">MagicMirror²</a> para así darle la apariencia de un espejo con widgets.
+                    </p>
+                    <p>
                         <a href="https://magicmirror.builders/" class="link">MagicMirror²</a> es una plataforma de espejo inteligente modular de código abierto. Con una creciente lista de módulos instalables, MagicMirror² permite convertir un espejo de pasillo o de baño en su asistente personal. MagicMirror² está construido por el creador del MagicMirror original con la increíble ayuda de una creciente comunidad de contribuyentes.
                     </p>
                     <p>
@@ -202,31 +205,38 @@
                 <div class="col-12 text-justify mb-3">
                     <h4 class="text-secondary text-left">Requisitos Hardware</h4>
                     <p>
-                        Para que <a href="https://magicmirror.builders/" class="link">MagicMirror²</a> funcione, es necesario contar con una Raspberry Pi 3B o superior. Sin embargo, <a href="https://www.electronjs.org/">Electron</a>, el contenedor de aplicaciones alrededor de <a href="https://magicmirror.builders/" class="link">MagicMirror²</a> , es compatible con Raspberry Pi 2, 3 y 4. Actualmente, Raspberry Pi 0/1 no es compatible. Si desea ejecutar esto en una Raspberry Pi 1, use la función de solo servidor y configure usted mismo un navegador de pantalla completa. (Sí, las personas han logrado ejecutar MM² también en un Pi0, así que si insistes, busca en los foros).
+                        Para que el espejo inteligente funcione, es necesario contar con una Raspberry Pi 3B o superior. Sin embargo, <a href="https://www.electronjs.org/">Electron</a>, el contenedor de aplicaciones alrededor de <a href="https://magicmirror.builders/" class="link">MagicMirror²</a> , es compatible con Raspberry Pi 2, 3 y 4. Actualmente, Raspberry Pi 0/1 no es compatible. Si desea ejecutar esto en una Raspberry Pi 1, use la función de solo servidor y configure usted mismo un navegador de pantalla completa. (Sí, las personas han logrado ejecutar MM² también en un Pi0, así que si insistes, busca en los foros).
                     </p>
                     <p>
-                        Por otro lado, <a href="https://magicmirror.builders/" class="link">MagicMirror²</a> se centra en un sistema de complemento modular y utiliza Electron como envoltorio de aplicaciones. ¡Así que no es necesario instalar más servidores web o navegadores!
+                        Como el proyecto utiliza hardware de Raspberry Pi, se siguen los consejos que el sitio oficial sugiere como lo es el uso de una microSD clase 10, una corriente continua de 5A y un voltaje de 3V para que el sistema operativo funcione sin problemas.
                     </p>
                 </div>
                 <div class="col-12 text-justify mb-3">
                     <h4 class="text-secondary text-left">Requisitos Software</h4>
                     <p>
-                        Como <a href="https://magicmirror.builders/" class="link">MagicMirror²</a> necesita de una Raspberry Pi, entonces es necesario contar con el SO <a href="https://www.raspberrypi.org/downloads/raspbian/">Raspbian</a> el cual se instala facilmente mediante NOOBS o directamente bootearlo en la ms desde su página oficial.
+                        El espejo inteligente requiere de el SO <a href="https://www.raspberrypi.org/downloads/raspbian/">Raspbian</a> en su versión más reciente, el cuál se puede instalar mediante <a href="https://www.raspberrypi.org/downloads/noobs/">NOOBS</a> o bootear el sistema directamente en la microSD. Así mismo, el espejo inteligente requiere los modulos de <a href="https://magicmirror.builders/" class="link">MagicMirror²</a> los cuales se instalan por comandos de consola.
                     </p>
                     <p>
-                        Por otro lado es necesario contar con la paquetería de <a href="https://nodejs.org/es/">Node.js</a> para poder instalar <a href="https://www.electronjs.org/">Electron</a> y algunos otros paquetes que podrían ser necesarios.
+                        Por otro lado es necesario contar con la paquetería de <a href="https://nodejs.org/es/">Node.js</a> en su versión más reciente para poder instalar <a href="https://www.electronjs.org/">Electron</a> y algunos otros paquetes que podrían ser necesarios para la instalación y manupulación del espejo inteligente. Además de todo esto, como la paqueteria de <a href="https://magicmirror.builders/" class="link">MagicMirror²</a> se centra en un sistema de complemento modular y utiliza Electron como envoltorio de aplicaciones. ¡No es necesario instalar más servidores web o navegadores! Ya que el propio <a href="https://www.electronjs.org/">Electron</a> tiene integrado chromium para la visualizacion de los componentes.
                     </p>
                 </div>
                 <div class="col-12 text-justify mb-3">
                     <h4 class="text-secondary text-left">Instalación</h4>
                     <p>
-                        El Magic Mirror se puede instalar manualmente o utilizando instaladores automáticos. A principios de 2020 se tomó la decisión de eliminar el instalador automático del repositorio principal de MagicMirror² y moverlo a un repositorio separado mantenido por la comunidad. Para obtener más información sobre esta decisión, consulte el número 1860 en GitHub.
+                        Primero que nada se debe de instalar <a href="https://www.raspberrypi.org/downloads/raspbian/">Raspbian</a>, puedes checar su guía de instalación <a href="https://www.raspberrypi.org/documentation/installation/installing-images/README.md">dando click aquí</a>. Posterior a la instalación inicial es necesario ejecutar los siguientes comandos:
+                    </p>
+                    <ul class="list-unstyled">
+                        <li><code>$ sudo apt-get update</code></li>
+                        <li><code>$ sudo apt-get upgrade</code></li>
+                    </ul>
+                    <p>
+                        Una vez se tiene instalado y actualizado <a href="https://www.raspberrypi.org/downloads/raspbian/">Raspbian</a> en la microSD, se debe de instalar los paquetes de <a href="https://magicmirror.builders/" class="link">MagicMirror²</a>, los cuales se pueden instalar manualmente o utilizando instaladores automáticos. Sin embargo, a principios de 2020 se tomó la decisión de eliminar el instalador automático del repositorio principal de MagicMirror² y moverlo a un repositorio separado mantenido por la comunidad. Para obtener más información sobre esta decisión, consulte el número 1860 en GitHub.
                     </p>
                     <p>
                         Por lo tanto, la única forma de instalación oficialmente admitida es mediante el uso de una instalación manual. El uso de scripts de instalación externos es bajo su propio riesgo, pero puede facilitar el proceso. Los instaladores automáticos disponibles se pueden encontrar en: métodos de instalación alternativos.
                     </p>
                     <h6 class="font-weight-bold">Instalación Manual:</h6>
-                    <ul class="list-unstyled text-left">
+                    <ul class="list-unstyled text-justify">
                         <li>Descargue e instale la última versión de <a href="https://nodejs.org/es/">Node.js</a>:</li>
                         <li><code>$ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -</code></li>
                         <li><code>$ sudo apt install -y nodejs</code></li>
@@ -243,6 +253,9 @@
                         <li class="mt-3">(Para Servidor sólo uso)</li>
                         <li><code>$ npm run server</code></li>
                     </ul>
+                    <div class="alert alert-light rounded-lg" role="alert">
+                        <b>NOTA: </b>Como Raspbian es una distribución de linux, los comandos a utilizar seran hechos en la consola bash de linux.
+                    </div>
                 </div>
                 <div class="col-12 text-justify mb-3">
                     <h4 class="text-secondary text-left">Uso</h4>
@@ -296,13 +309,13 @@
                     <div class="alert alert-light rounded-lg" role="alert">
                         <b>AVISO: </b>El proyecto se ha atrasado un poco por problemas generador debido a la cuarentena, pero ya estamos reanudando las actulaizaciones y pronto subiremos nuevos avances del proyecto.
                     </div>
-                    <div class="embed-responsive embed-responsive-16by9 rounded-lg border my-3 mx-auto">
+                    <div class="embed-responsive embed-responsive-16by9 rounded-lg border my-5 mx-auto">
                         <iframe src="https://drive.google.com/file/d/1YrnGi4s5K4dIY7Hn3uvevljd3r0kpLLG/preview" width="640" height="480" class="embed-responsive-item"></iframe>
                     </div>
-                    <div class="embed-responsive embed-responsive-16by9 rounded-lg border my-3 mx-auto">
+                    <div class="embed-responsive embed-responsive-16by9 rounded-lg border my-5 mx-auto">
                         <iframe src="https://drive.google.com/file/d/1Z-FIv7rX889BPetHiME_XekhZF4T-JJn/preview" width="640" height="480" class=embed-responsive-item"></iframe>
                     </div>
-                    <div class="embed-responsive embed-responsive-16by9 rounded-lg border my-3 mx-auto">
+                    <div class="embed-responsive embed-responsive-16by9 rounded-lg border my-5 mx-auto">
                         <iframe src="https://drive.google.com/file/d/1Z-CewEkUcC0LMrTbnFVLtokqEBqyFK1T/preview" width="640" height="480" class="embed-responsive-item"></iframe>
                     </div>
                 </div>
@@ -325,15 +338,15 @@
                     <div class="alert alert-light rounded-lg" role="alert">
                         <b>NOTA: </b>Puede acceder al cuestionario <a href="https://forms.gle/cTPJ41oG3vWcANEE8">dando clic aqui</a>.
                     </div>
-                    <img src="https://raw.githubusercontent.com/pgomezm0486/arq-proyect/master/src/em1.png" alt="[imagen]" class="img-fluid rounded my-3">
-                    <img src="https://raw.githubusercontent.com/pgomezm0486/arq-proyect/master/src/em2.png" alt="[imagen]" class="img-fluid rounded my-3">
-                    <img src="https://raw.githubusercontent.com/pgomezm0486/arq-proyect/master/src/em3.png" alt="[imagen]" class="img-fluid rounded my-3">
-                    <img src="https://raw.githubusercontent.com/pgomezm0486/arq-proyect/master/src/em4.png" alt="[imagen]" class="img-fluid rounded my-3">
-                    <img src="https://raw.githubusercontent.com/pgomezm0486/arq-proyect/master/src/em5.png" alt="[imagen]" class="img-fluid rounded my-3">
-                    <img src="https://raw.githubusercontent.com/pgomezm0486/arq-proyect/master/src/em6.png" alt="[imagen]" class="img-fluid rounded my-3">
-                    <img src="https://raw.githubusercontent.com/pgomezm0486/arq-proyect/master/src/em7.png" alt="[imagen]" class="img-fluid rounded my-3">
-                    <img src="https://raw.githubusercontent.com/pgomezm0486/arq-proyect/master/src/em81.png" alt="[imagen]" class="img-fluid rounded my-3">
-                    <img src="https://raw.githubusercontent.com/pgomezm0486/arq-proyect/master/src/em9.png" alt="[imagen]" class="img-fluid rounded mt-3">
+                    <img src="https://raw.githubusercontent.com/pgomezm0486/arq-proyect/master/src/media/em1.png" alt="[imagen]" class="img-fluid rounded my-3">
+                    <img src="https://raw.githubusercontent.com/pgomezm0486/arq-proyect/master/src/media/em2.png" alt="[imagen]" class="img-fluid rounded my-3">
+                    <img src="https://raw.githubusercontent.com/pgomezm0486/arq-proyect/master/src/media/em3.png" alt="[imagen]" class="img-fluid rounded my-3">
+                    <img src="https://raw.githubusercontent.com/pgomezm0486/arq-proyect/master/src/media/em4.png" alt="[imagen]" class="img-fluid rounded my-3">
+                    <img src="https://raw.githubusercontent.com/pgomezm0486/arq-proyect/master/src/media/em5.png" alt="[imagen]" class="img-fluid rounded my-3">
+                    <img src="https://raw.githubusercontent.com/pgomezm0486/arq-proyect/master/src/media/em6.png" alt="[imagen]" class="img-fluid rounded my-3">
+                    <img src="https://raw.githubusercontent.com/pgomezm0486/arq-proyect/master/src/media/em7.png" alt="[imagen]" class="img-fluid rounded my-3">
+                    <img src="https://raw.githubusercontent.com/pgomezm0486/arq-proyect/master/src/media/em81.png" alt="[imagen]" class="img-fluid rounded my-3">
+                    <img src="https://raw.githubusercontent.com/pgomezm0486/arq-proyect/master/src/media/em9.png" alt="[imagen]" class="img-fluid rounded mt-3">
                 </div>
             </div>
         </div>
