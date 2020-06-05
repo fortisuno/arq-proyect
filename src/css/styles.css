@@ -40,10 +40,10 @@ code {
   width: 100%;
   text-align: left; }
 
-#expo .img-container img {
-  max-width: 500px; }
+.img-container img {
+  max-width: 480px; }
 
-#expo .img-container span {
+.img-container span {
   display: block;
   width: 100%;
   text-align: center; }
