@@ -21,8 +21,17 @@
                     <li class="nav-item">
                         <a class="nav-link" href="https://pgomezm0486.github.io/arq-proyect/">Inicio<span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="https://pgomezm0486.github.io/arq-proyect/proyecto.html">Proyecto</a>
+                    </li>
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="hwMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Exposiciones
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="hwMenu">
+                            <a class="dropdown-item" href="https://pgomezm0486.github.io/arq-proyect/parcial_1.html">Parcial 1</a>
+                            <a class="dropdown-item" href="https://pgomezm0486.github.io/arq-proyect/parcial_2.html">Parcial 2</a>
+                        </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="hwMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -47,24 +56,120 @@
             </div>
         </div>
         <div class="nav flex-column" id="nav-sidebar">
-            <a class="nav-link px-5 active" href="#introduccion">2.1 Organización y Arquitectura</a>
-            <a class="nav-link px-5" href="#objetivo">2.2 Unidades básicas de las computadoras</a>
+            <a class="nav-link px-5 active" href="#2-1">2.1 Organización y Arquitectura</a>
+            <a class="nav-link px-5" href="#2-2">2.2 Unidades básicas de las computadoras</a>
             <a class="nav-link px-5" href="#documentacion">2.3 Buses del sistema</a>
         </div>
     </nav>
 
-    <section class="container pt-5" id="expo">
-        <div class="row py-5">
-            <div class="col-12 title">
-                <h2>2.1 Organización y Arquitectura</h2>
+    <section class="pt-5" id="2-1">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-12">
+                    <h2>2.1 Organización y Arquitectura</h2>
+                </div>
+                <div class="col-12 text-justify">
+                    <h4 class="text-primary">Organización</h4>
+                    <p>
+                        La organización básica de una computadora consiste en la unidad de entrada, por medio de la cual se introducen datos e instrucciones; la unidad central de procesamiento, donde se procesan los datos de acuerdo con las instrucciones dadas, y la unidad de salida, por medio de la cual se presenta la información resultante al usuario(Ariza, 1993).
+                    </p>
+                    <p>
+                        Mancia(2014)indica  que:“El  estudio  de  la  organización  del  computador  implica considerar  las  características  de  los  distintos  subsistemas  que  lo  integran  (procesador, memoria,  dispositivos  periféricos  y  de  almacenamiento),  tanto  desde  el  nivel  de arquitectura  como  desde  el  de  microarquitectura;  así  como  la  interconexión  de  dichos subsistemas (jerarquía de buses), los flujos mutuosde datos  y  control (comunicación  y sincronización) que permiten el funcionamiento del computador”. Tal como lo muestra la Fig-1.
+                    </p>
+                    <div class="w-100 text-center img-container my-4">
+                        <img src="https://raw.githubusercontent.com/pgomezm0486/arq-proyect/master/src/media/exposiciones/parcial_1/img_1.png" class="img-fluid rounded border mb-3" alt="[imagen]">
+                        <span class="text-muted">Fig-1. Organización física de un computador.</span>
+                    </div>
+                </div>  
+                <div class="col-12 text-justify">
+                    <h4 class="text-primary">Arquitectura</h4>
+                    <p>
+                        Como  lo  manifiestan  De  Freitas  &  Yáber(2015)una  arquitectura  es  un  modelo  de sistema  dentro  de  un  contexto  específico,  que  representa  los  componentes  necesarios para desarrollar el sistema desde una perspectiva o punto de vista particular.
+                    </p>
+                    <p>
+                        La arquitectura de la información es importante para determinar la estructura coherente de  módulos  que  soportan  la  tecnología  de  información  en  la  organización(Gutiérrez, 2013).   Sin   embargo,   para   una   mejor   comprensión   se   representa   la   arquitectura esquemática en la Fig-2.
+                    </p>
+                    <div class="w-100 text-center img-container my-4">
+                        <img src="https://raw.githubusercontent.com/pgomezm0486/arq-proyect/master/src/media/exposiciones/parcial_1/img_2.png" class="img-fluid rounded border mb-3" alt="[imagen]">
+                        <span class="text-muted">Fig-2. Arquitectura esquemática de una placa madre típica.</span>
+                    </div>
+                    <p>
+                        Aranda(2014)manifiestaqueuna  computadora  está  compuesta  por  componentes electrónicos.  Esto  hace  que  sea  fundamental,  para  el  análisis,  diseño  y la  división jerárquica   en   subsistemas   interrelacionados.   Cada   uno   de   estos   se   desarrolla   en estructuras hasta alcanzar el nivel más bajo o elemental. Recuerdeque de cada nivel es importanteel funcionamiento y la estructura. Tal como se referencia en la Fig-3.
+                    </p>
+                    <div class="w-100 text-center img-container my-4">
+                        <img src="https://raw.githubusercontent.com/pgomezm0486/arq-proyect/master/src/media/exposiciones/parcial_1/img_3.png" class="img-fluid rounded border mb-3" alt="[imagen]">
+                        <span class="text-muted">Fig-3. Entorno Operativo (Fuente yDestino de los datos).</span>
+                    </div>
+                    <p>
+                        Las funciones básicas en términos generales son representadas en la figura 1.4,a través de las funciones de uncomputador. Sin embargo, se listan a continuación:
+                    </p>
+                    <ul class="list-unstyled ml-5">
+                        <li>-&nbsp&nbsp Procesamiento de datos</li>
+                        <li>-&nbsp&nbsp Almacenamiento de datos</li>
+                        <li>-&nbsp&nbsp Transferencia de datos</li>
+                        <li>-&nbsp&nbsp Control</li>
+                    </ul>
+                    <p>
+                        Si se asumen las concepcionesde Sánchez(2006)resulta que el Procesamiento  de  datos corresponde a la información que se tiene que  utilizar  para realizar una operación a fin de obtener un resultado.Almacén de datos:es necesario para  guardar los  datos sin procesar después de realizar operaciones con ellos.Transferencia de datos:es el proceso de mover los datos de un lugar aotro.Control:debe  existir  un  control  entre  las  tres  funciones  anteriores,  el  cual  es  ejercido por el/los ente(s) que proporciona(n) instrucciones a la computadora.
+                    </p>
+                </div>
             </div>
-            <div class="col-12 content">
-                <p>
-                    La organización básica de una computadora consiste en la unidad de entrada, por medio de la cual se introducen datos e instrucciones; la unidad central de procesamiento, donde se procesan los datos de acuerdo con las instrucciones dadas, y la unidad de salida, por medio de la cual se presenta la información resultante al usuario.
-                </p>
-                <div class="w-100 text-center img-container">
-                    <img src="https://raw.githubusercontent.com/pgomezm0486/arq-proyect/master/src/media/exposiciones/parcial_1/img1.png" class="img-fluid rounded border mb-3" alt="[imagen]">
-                    <span class="text-muted">Fig-1. Organización física de un computador</span>
+        </div>
+    </section>
+
+    <section class="pt-5" id="2-2">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-12">
+                    <h2>2.2 Unidades básicas de las computadoras</h2>
+                </div>
+                <div class="col-12 text-justify">
+                    <p>
+                        Se denomina hardware a todos los elementos tangibles de la computadora: procesador, monitor, teclado, tarjetas, circuitos integrados, cables, etc. El hardware de una computadora está compuesto por la unidad central, los dispositivos periféricos de entrada, de salida y de entrada/salida, así como por los cables, conexiones y puertos que permiten la interacción de todos ellos. Todos estos elementos en conjunto constituyen la arquitectura básica de la computadora.
+                    </p>
+                    <p>
+                        Los componentes de hardware básicos de una computadora son tres: unidad central de proceso o CPU, monitor y teclado. La unidad central de proceso o CPU es, como su nombre lo indica, la unidad principal de la computadora y tiene tres funciones principales:
+                    </p>    
+                    <ul class="list-unstyled ml-5">
+                        <li>-&nbsp&nbsp Controlar el sistema de cómputo (hardware y software)</li>
+                        <li>-&nbsp&nbsp Desarrollar las operaciones matemáticas y lógicas</li>
+                        <li>-&nbsp&nbsp Controlar el envío y recepción de datos de los dispositivos periféricos</li>
+                    </ul>
+                    <p>
+                        El teclado es el dispositivo periférico de entrada básico y sirve para introducir datos a la computadora. Sus teclas se agrupan generalmente en tres secciones: teclas de función, colocadas en el lado izquierdo o en la fila superior; teclas alfanuméricas, colocadas en la zona central; y zona numérica del lado derecho, que es opcional, es decir, no está incluida en todos los teclados. El monitor es el dispositivo periférico de salida básico y sirve para visualizar los datos que se introducen a la computadora y aquellos resultantes de los procesos. Es muy similar a la pantalla de un televisor. De modo que, básicamente la computadora funciona mediante el ingreso de datos, su procesamiento y la salida de datos resultantes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-5" id="2-2">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-12">
+                    <h2>2.3 Buses del sistema</h2>
+                </div>
+                <div class="col-12 text-justify">
+                    <p>
+                        En un sistema de computadores, los diversos subsistemas deben tener interfaces entre sí; por ejemplo, la memoria y la CPU necesitan comunicarse, también la CPU y los dispositivos de E/S. Esto, comúnmente, se realiza con un bus.
+
+                    </p>
+                    <p>
+                        Hennessy   y   Patterson(1993)especificaron   que el   bus   sirve   como   enlace   de comunicación  compartido  entre  los  subsistemas. Las  dos  principales  ventajas  de  la organización  bus  son  el  bajo  coste  y  la  versatilidad.  Al  definir  un  sencillo  esquema  de interconexión, se pueden añadir fácilmente nuevos dispositivos y los periféricos pueden,incluso,compartirse  entre  sistemas  de  computadores  que  utilicen  un  bus  común.  El coste es bajo, ya que un simple conjunto de cablesesun camino múltiple compartido.Un buses un camino de comunicación entre dos o más dispositivos. Una característica clave  de  un  bus  es  que  se  trata  de  un  medio  de  transmisión  compartido.  Al  bus  se conectan varios dispositivos, y cualquier señal transmitida por uno de esos dispositivos está disponible para que los otros dispositivos conectados al bus puedan acceder a ella. Si dos dispositivos transmiten durante el mismo periodo de tiempo, sus señales pueden solaparse y distorsionarse. Consiguientemente, solo un dispositivo puede transmitir con éxitoen un momento dado.
+                    </p>
+                    <p>
+                        Usualmente un bus está constituido por varios caminos de comunicación o líneas. Cada línea es capaz de transmitir señales binarias representadas por 1 y por 0. En un intervalo de  tiempo,  se  puede  transmitir  una  secuencia  de  dígitos  binarios  a  través  de  una  única línea.  Se  pueden  utilizar  varias  líneas  del  bus  para  transmitir  dígitos simultáneamente (en paralelo). 
+                    </p>
+                    <p>
+                        Como  forma  de  reafirmación  Stallings(2006)indica  que  el  bus  que  conecta  los componentes principales del computador (procesador, memoria y E/S) se denomina Bus del  sistema(System  bus).  Las  estructuras  de  interconexión  más  comunes  dentro  de  un computador están basadas en el uso de uno o más buses del sistema.
+                    </p>
+                    <p>
+                        El bus del sistema está constituido, usualmente, por entre 50 y 100 líneas. A cada línea se  le  asigna  un  significado  o  una  función  particular.  Aunque  existen  diseños  de  buses muy  diversos,  en  todos  ellos  las  líneas  se  pueden  clasificar  en  tres  grupos  funcionales: líneas de datos, de direcciones y de control.
+                    </p>
+                    <div class="w-100 text-center img-container my-4">
+                        <img src="https://raw.githubusercontent.com/pgomezm0486/arq-proyect/master/src/media/exposiciones/parcial_1/img_5.png" class="img-fluid rounded border mb-3" alt="[imagen]">
+                        <span class="text-muted">Fig-5. Diagrama de estructura del bus.</span>
+                    </div>
                 </div>
             </div>
         </div>
