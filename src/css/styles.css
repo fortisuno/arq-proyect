@@ -35,6 +35,9 @@ header h1 {
   header h1 {
     max-width: 50%; } }
 
+.scroll-section {
+  padding-top: 56px; }
+
 code {
   display: block;
   width: 100%;
@@ -68,10 +71,14 @@ code {
       padding-left: 50px;
       padding-right: 50px; } }
 
+#navbarNav {
+  z-index: 100; }
+
 .sidebar {
   height: 100vh;
   width: 310px;
-  z-index: 100; }
+  position: fixed;
+  z-index: 99; }
   .sidebar .nav .nav-link {
     color: #181818; }
     .sidebar .nav .nav-link:hover {
