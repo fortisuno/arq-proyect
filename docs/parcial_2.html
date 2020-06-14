@@ -12,7 +12,7 @@
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background: #111111">
         <div class="container">
-            <a class="navbar-brand" href="./">Equipo 5</a>
+            <a class="navbar-brand" href="./">Equipo 33</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -51,125 +51,226 @@
     <nav class="bg-white border-right position-fixed pt-5 px-0 sidebar">
         <div class="pt-5 px-5 mb-5">
             <h1 class="mb-0">Exposiciones</h1>
-            <span>Parcial 1 <span class="badge badge-success">Equipo 5</span></span>
+            <span>Parcial 2 <span class="badge badge-success">Equipo 33</span></span>
         </div>
         <div class="nav flex-column" id="nav-sidebar">
-            <a class="nav-link px-5" href="#s2_1">2.1 Organización y Arquitectura</a>
-            <a class="nav-link px-5" href="#s2_2">2.2 Unidades básicas de las computadoras</a>
-            <a class="nav-link px-5" href="#s2_3">2.3 Buses del sistema</a>
+            <a class="nav-link px-5" href="#s3_3">3.3 Modos de direccionamiento</a>
+            <a class="nav-link px-5" href="#s3_4">3.4 Organización del procesador</a>
+            <a class="nav-link px-5" href="#s3_4_1">3.4.1 Organización de los registros</a>
+            <a class="nav-link px-5" href="#s3_4_2">3.4.2 El ciclo de instrucción</a>
+            <a class="nav-link px-5" href="#s3_4_3">3.4.3 Segmentación de instrucciones</a>
         </div>
     </nav>
 
-    <section class="scroll-section" id="s2_1">
+    <section class="scroll-section" id="s3_3">
         <div class="container py-5">
             <div class="row">
                 <div class="col-12">
-                    <h2>2.1 Organización y Arquitectura</h2>
-                </div>
-                <div class="col-12 text-justify">
-                    <h4 class="text-primary">Organización</h4>
-                    <p>
-                        La organización básica de una computadora consiste en la unidad de entrada, por medio de la cual se introducen datos e instrucciones; la unidad central de procesamiento, donde se procesan los datos de acuerdo con las instrucciones dadas, y la unidad de salida, por medio de la cual se presenta la información resultante al usuario(Ariza, 1993).
-                    </p>
-                    <p>
-                        Mancia(2014)indica  que:“El  estudio  de  la  organización  del  computador  implica considerar  las  características  de  los  distintos  subsistemas  que  lo  integran  (procesador, memoria,  dispositivos  periféricos  y  de  almacenamiento),  tanto  desde  el  nivel  de arquitectura  como  desde  el  de  microarquitectura;  así  como  la  interconexión  de  dichos subsistemas (jerarquía de buses), los flujos mutuosde datos  y  control (comunicación  y sincronización) que permiten el funcionamiento del computador”. Tal como lo muestra la Fig-1.
-                    </p>
-                    <div class="w-100 text-center img-container my-4">
-                        <img src="https://raw.githubusercontent.com/pgomezm0486/arq-proyect/master/src/media/exposiciones/parcial_1/img_1.png" class="img-fluid rounded border mb-3" alt="[imagen]">
-                        <span class="text-muted">Fig-1. Organización física de un computador.</span>
-                    </div>
-                </div>  
-                <div class="col-12 text-justify">
-                    <h4 class="text-primary">Arquitectura</h4>
-                    <p>
-                        Como  lo  manifiestan  De  Freitas  &  Yáber(2015)una  arquitectura  es  un  modelo  de sistema  dentro  de  un  contexto  específico,  que  representa  los  componentes  necesarios para desarrollar el sistema desde una perspectiva o punto de vista particular.
-                    </p>
-                    <p>
-                        La arquitectura de la información es importante para determinar la estructura coherente de  módulos  que  soportan  la  tecnología  de  información  en  la  organización(Gutiérrez, 2013).   Sin   embargo,   para   una   mejor   comprensión   se   representa   la   arquitectura esquemática en la Fig-2.
-                    </p>
-                    <div class="w-100 text-center img-container my-4">
-                        <img src="https://raw.githubusercontent.com/pgomezm0486/arq-proyect/master/src/media/exposiciones/parcial_1/img_2.png" class="img-fluid rounded border mb-3" alt="[imagen]">
-                        <span class="text-muted">Fig-2. Arquitectura esquemática de una placa madre típica.</span>
-                    </div>
-                    <p>
-                        Aranda(2014)manifiestaqueuna  computadora  está  compuesta  por  componentes electrónicos.  Esto  hace  que  sea  fundamental,  para  el  análisis,  diseño  y la  división jerárquica   en   subsistemas   interrelacionados.   Cada   uno   de   estos   se   desarrolla   en estructuras hasta alcanzar el nivel más bajo o elemental. Recuerdeque de cada nivel es importanteel funcionamiento y la estructura. Tal como se referencia en la Fig-3.
-                    </p>
-                    <div class="w-100 text-center img-container my-4">
-                        <img src="https://raw.githubusercontent.com/pgomezm0486/arq-proyect/master/src/media/exposiciones/parcial_1/img_3.png" class="img-fluid rounded border mb-3" alt="[imagen]">
-                        <span class="text-muted">Fig-3. Entorno Operativo (Fuente yDestino de los datos).</span>
-                    </div>
-                    <p>
-                        Las funciones básicas en términos generales son representadas en la figura 1.4,a través de las funciones de uncomputador. Sin embargo, se listan a continuación:
-                    </p>
-                    <ul class="list-unstyled ml-5">
-                        <li>-&nbsp&nbsp Procesamiento de datos</li>
-                        <li>-&nbsp&nbsp Almacenamiento de datos</li>
-                        <li>-&nbsp&nbsp Transferencia de datos</li>
-                        <li>-&nbsp&nbsp Control</li>
-                    </ul>
-                    <p>
-                        Si se asumen las concepcionesde Sánchez(2006)resulta que el Procesamiento  de  datos corresponde a la información que se tiene que  utilizar  para realizar una operación a fin de obtener un resultado.Almacén de datos:es necesario para  guardar los  datos sin procesar después de realizar operaciones con ellos.Transferencia de datos:es el proceso de mover los datos de un lugar aotro.Control:debe  existir  un  control  entre  las  tres  funciones  anteriores,  el  cual  es  ejercido por el/los ente(s) que proporciona(n) instrucciones a la computadora.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="scroll-section" id="s2_2">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-12">
-                    <h2>2.2 Unidades básicas de las computadoras</h2>
+                    <h2>3.3 Modos de direccionamiento</h2>
                 </div>
                 <div class="col-12 text-justify">
                     <p>
-                        Se denomina hardware a todos los elementos tangibles de la computadora: procesador, monitor, teclado, tarjetas, circuitos integrados, cables, etc. El hardware de una computadora está compuesto por la unidad central, los dispositivos periféricos de entrada, de salida y de entrada/salida, así como por los cables, conexiones y puertos que permiten la interacción de todos ellos. Todos estos elementos en conjunto constituyen la arquitectura básica de la computadora.
+                        En informática, los modos de direccionamiento son las diferentes maneras de especificar un operando dentro de una instrucción en lenguaje ensamblador.
                     </p>
                     <p>
-                        Los componentes de hardware básicos de una computadora son tres: unidad central de proceso o CPU, monitor y teclado. La unidad central de proceso o CPU es, como su nombre lo indica, la unidad principal de la computadora y tiene tres funciones principales:
-                    </p>    
-                    <ul class="list-unstyled ml-5">
-                        <li>-&nbsp&nbsp Controlar el sistema de cómputo (hardware y software)</li>
-                        <li>-&nbsp&nbsp Desarrollar las operaciones matemáticas y lógicas</li>
-                        <li>-&nbsp&nbsp Controlar el envío y recepción de datos de los dispositivos periféricos</li>
-                    </ul>
+                        Un modo de direccionamiento especifica la forma de calcular la dirección de memoria efectiva de un operando mediante el uso de la información contenida en registros y/o constantes, contenida dentro de una instrucción de la máquina o en otra parte.
+                    </p>
                     <p>
-                        El teclado es el dispositivo periférico de entrada básico y sirve para introducir datos a la computadora. Sus teclas se agrupan generalmente en tres secciones: teclas de función, colocadas en el lado izquierdo o en la fila superior; teclas alfanuméricas, colocadas en la zona central; y zona numérica del lado derecho, que es opcional, es decir, no está incluida en todos los teclados. El monitor es el dispositivo periférico de salida básico y sirve para visualizar los datos que se introducen a la computadora y aquellos resultantes de los procesos. Es muy similar a la pantalla de un televisor. De modo que, básicamente la computadora funciona mediante el ingreso de datos, su procesamiento y la salida de datos resultantes.
+                        No existe una forma generalmente aceptada de nombrar a los distintos modos de direccionamiento. En particular, los distintos autores y fabricantes de equipos pueden dar nombres diferentes para el modo de hacer frente al mismo, o los mismos nombres, a los diferentes modos de direccionamiento.
+                    </p>
+                    <p>
+                        Además, un modo de direccionamiento que en una determinada arquitectura se trata como un modo de direccionamiento, puede representar la funcionalidad que en otra arquitectura está cubierto por dos o más modos de direccionamiento.
                     </p>
                     <div class="w-100 text-center img-container my-4">
-                        <img src="https://raw.githubusercontent.com/pgomezm0486/arq-proyect/master/src/media/exposiciones/parcial_1/img_4.jpg" class="img-fluid rounded border mb-3" alt="[imagen]">
-                        <span class="text-muted">Fig-4. Componentes de una computadora</span>
+                        <img src="https://raw.githubusercontent.com/pgomezm0486/arq-proyect/master/src/media/exposiciones/parcial_2/img_1.png" class="img-fluid rounded border mb-3" alt="[imagen]">
+                        <span class="text-muted">Fig-1. Cuadro sinoptico de modos de direccionamiento.</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="scroll-section" id="s2_3">
+    <section class="scroll-section" id="s3_4">
         <div class="container py-5">
             <div class="row">
                 <div class="col-12">
-                    <h2>2.3 Buses del sistema</h2>
+                    <h2>3.4 Organización del procesador</h2>
                 </div>
                 <div class="col-12 text-justify">
                     <p>
-                        En un sistema de computadores, los diversos subsistemas deben tener interfaces entre sí; por ejemplo, la memoria y la CPU necesitan comunicarse, también la CPU y los dispositivos de E/S. Esto, comúnmente, se realiza con un bus.
-
+                        La Unidad de Procesamiento (CPU) controla el funcionamiento del computador y lleva a cabo sus funciones de procesamiento de datos. Frecuentemente se le llama procesador.
                     </p>
                     <p>
-                        Hennessy   y   Patterson(1993)especificaron   que el   bus   sirve   como   enlace   de comunicación  compartido  entre  los  subsistemas. Las  dos  principales  ventajas  de  la organización  bus  son  el  bajo  coste  y  la  versatilidad.  Al  definir  un  sencillo  esquema  de interconexión, se pueden añadir fácilmente nuevos dispositivos y los periféricos pueden,incluso,compartirse  entre  sistemas  de  computadores  que  utilicen  un  bus  común.  El coste es bajo, ya que un simple conjunto de cablesesun camino múltiple compartido.Un buses un camino de comunicación entre dos o más dispositivos. Una característica clave  de  un  bus  es  que  se  trata  de  un  medio  de  transmisión  compartido.  Al  bus  se conectan varios dispositivos, y cualquier señal transmitida por uno de esos dispositivos está disponible para que los otros dispositivos conectados al bus puedan acceder a ella. Si dos dispositivos transmiten durante el mismo periodo de tiempo, sus señales pueden solaparse y distorsionarse. Consiguientemente, solo un dispositivo puede transmitir con éxitoen un momento dado.
+                        Un procesador, incluye tanto registros visibles por el usuario como registros de control/estado. Los registros visibles por el usuario pueden ser de uso general o tener una utilidad especial, mientras que los registros de control y estado se usan para controlar el funcionamiento del procesador, un claro ejemplo es el contador de programa.
                     </p>
                     <p>
-                        Usualmente un bus está constituido por varios caminos de comunicación o líneas. Cada línea es capaz de transmitir señales binarias representadas por 1 y por 0. En un intervalo de  tiempo,  se  puede  transmitir  una  secuencia  de  dígitos  binarios  a  través  de  una  única línea.  Se  pueden  utilizar  varias  líneas  del  bus  para  transmitir  dígitos simultáneamente (en paralelo). 
+                        Lleva a cabo una gran variedad de:
+                    </p>
+                    <ul class="list-ustyled">
+                        <li>-&nbsp&nbsp Cálculos</li>
+                        <li>-&nbsp&nbsp Comparaciones numéricas</li>
+                        <li>-&nbsp&nbsp Transferencias de datos como respuesta a las peticiones de los programas que están siendo ejecutados en memoria.</li>
+                    </ul>
+                    <p>
+                        La CPU controla las operaciones básicas del ordenador enviando y recibiendo señales de control, direcciones de memoria y datos de un lugar a otro de la computadora a través de un grupo de canales llamados BUS.
                     </p>
                     <p>
-                        Como  forma  de  reafirmación  Stallings(2006)indica  que  el  bus  que  conecta  los componentes principales del computador (procesador, memoria y E/S) se denomina Bus del  sistema(System  bus).  Las  estructuras  de  interconexión  más  comunes  dentro  de  un computador están basadas en el uso de uno o más buses del sistema.
+                        La Unidad Central de Proceso está constituida internamente por:
+                    </p>
+                    <ul class="list-unstyled">
+                        <li>-&nbsp&nbsp La Unidad de Control (CU)</li>
+                        <li>-&nbsp&nbsp Unidad Aritmético-Lógica (ALU)</li>
+                    </ul>
+                    <p>
+                        Por una parte, La ALU ecibe los datos sobre los que efectúa operaciones de cálculo y comparaciones. Toma decisiones lógicas (determina si una afirmación es correcta o falsa mediante reglas del algebra de Boole) y devuelve luego el resultado. Todo ello bajo supervisión de la unidad de control.
                     </p>
                     <p>
-                        El bus del sistema está constituido, usualmente, por entre 50 y 100 líneas. A cada línea se  le  asigna  un  significado  o  una  función  particular.  Aunque  existen  diseños  de  buses muy  diversos,  en  todos  ellos  las  líneas  se  pueden  clasificar  en  tres  grupos  funcionales: líneas de datos, de direcciones y de control.
+                        Y por otra parte, La CU le indica al resto del sistema como llevar a cabo las instrucciones de un programa. Comanda las señales electrónicas entre la memoria y la unidad aritmético-lógica, y entre el CPU y los dispositivos de entrada y salida. Para ejecutar cualquier programa, cada comando del mismo se desglosa en instrucciones.
                     </p>
-                    <div class="w-100 text-center img-container my-4">
-                        <img src="https://raw.githubusercontent.com/pgomezm0486/arq-proyect/master/src/media/exposiciones/parcial_1/img_5.png" class="img-fluid rounded border mb-3" alt="[imagen]">
-                        <span class="text-muted">Fig-5. Diagrama de estructura del bus.</span>
-                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="scroll-section" id="s3_4_1">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12">
+                    <h2>3.4.1 Organización de los registros</h2>
+                </div>
+                <div class="col-12 text-justify">
+                    <p>
+                        Para poder hacer estas cosas, es obvio que la CPU necesita almacenar algunos datos temporalmente. Debe recordar la posición de la última instrucción de forma que sepa dónde ir a buscar la siguiente. Necesita almacenar instrucciones y datos temporalmente mientras una instrucción está siendo ejecutada. En otras palabras, la CPU necesita una pequeña memoria interna. En la estructura interna de la CPU se indican los caminos de transferencia de datos y de control lógico, que incluyen un elemento con el rótulo bus interno de la CPU. Este elemento es necesario para transferir datos entre los diversos registros y la ALU, ya que ésta en realidad sólo opera con datos de la memoria interna de la CPU. La figura muestra también los elementos básicos típicos de la ALU. Dentro de la CPU hay una memoria interna compuesta por un conjunto de registros. Los registros de la CPU son:
+                    </p>
+                    <ul class="list-unstyled">
+                        <li>
+                            -&nbsp&nbsp Registros visibles al usuario: Permiten al programador de lenguaje de máquina o ensamblador minimizar las referencias a memoria principal optimizando el uso de los registros.
+                        </li>
+                        <li>
+                            -&nbsp&nbsp Registros de control: Son utilizados por la unidad de control para controlar el funcionamiento de la CPU y por programas privilegiados del sistema para controlar la ejecución de programas.
+                        </li>
+                        <li>
+                            -&nbsp&nbsp Registro de estado: Se utiliza para tomar decisiones en función de operaciones realizadas.
+                        </li>
+                        <li>
+                            -&nbsp&nbsp Registro puntero a pila.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="scroll-section" id="s3_4_2">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12">
+                    <h2>3.4.2 El ciclo de instrucción</h2>
+                </div>
+                <div class="col-12 text-justify">
+                    <p>
+                        La ejecución de una instrucción puede involucrar a uno o más operandos en memoria, cada uno de los cuales requiere un acceso a memoria. Además, si se usa direccionamiento indirecto serán necesarios accesos a memoria adicionales.
+                    </p>
+                    <h4 class="text-primary">Ciclo Fetch-Decode-Execute</h4>
+                    <p>
+                        Procedimiento bien establecido Fases(o sub ciclos): búsqueda  y ejecución (cada fase tiene etapas o actividades).
+                    </p>
+                    <ul class="list-unstyled">
+                        <li class="font-weight-bold">
+                            Fase Fetch
+                        </li>
+                        <li>
+                            -&nbsp&nbsp Cargar la siguiente instrucción
+                        </li>
+                        <li>
+                            -&nbsp&nbsp Incrementar el secuenciador.
+                        </li>
+                        <li>
+                            -&nbsp&nbsp Interpretar la Instrucción.
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li class="font-weight-bold">
+                            Fase Execute
+                        </li>
+                        <li>
+                            -&nbsp&nbsp Cargar los operandos.
+                        </li>
+                        <li>
+                            -&nbsp&nbsp Ejecutar la operación.
+                        </li>
+                        <li>
+                            -&nbsp&nbsp Guardar el resultado.
+                        </li>
+                        <li>
+                            -&nbsp&nbsp Verificar si hay solicitudes de interrupción.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="scroll-section" id="s3_4_3">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12">
+                    <h2>3.4.3 Segmentación de instrucciones</h2>
+                </div>
+                <div class="col-12 text-justify">
+                    <p>
+                        Técnica de solapamiento de instrucciones mediante la división de su ejecución en etapas o segmentos.
+                    </p>
+                    <ul class="list-unstyled">
+                        <li>
+                            -&nbsp&nbsp Los segmentos están conectados entre sí cada uno al siguiente.
+                        </li>
+                        <li>
+                            -&nbsp&nbsp Todos los segmentos proceden y progresan a la vez.
+                        </li>
+                        <li>
+                            -&nbsp&nbsp La segmentación es transparente al programador.
+                        </li>
+                    </ul>
+                    <p>
+                        Ciclo máquina: tiempo que tarda una instrucción en pasar de un segmento al siguiente.
+                    </p>
+                    <ul class="list-unstyled">
+                        <li>
+                            -&nbsp&nbsp Su duración viene dada por la duración de la etapa máslenta.
+                        </li>
+                        <li>
+                            -&nbsp&nbsp Normalmente, un ciclo máquina es un ciclo de reloj.
+                        </li>
+                    </ul>
+                    <p>
+                        La segmentación incrementa la productividad de instrucciones de la CPU, pero no disminuye el tiempo de ejecución de cada instrucción:
+                    </p>
+                    <ul class="list-unstyled">
+                        <li>
+                            -&nbsp&nbsp Las etapas no suelen estar perfectamente equilibradas.
+                        </li>
+                        <li>
+                            -&nbsp&nbsp Gasto en el control de la segmentación.
+                        </li>
+                    </ul>
+                    <h4 class="text-primary">Pasos para su implementación</h4>
+                    <ol class="pl-5">
+                        <li>
+                            IF: búsqueda de la instrucción.
+                        </li>
+                        <li>
+                            ID: decodificación de la instrucción y búsqueda de
+                        </li>
+                        <li>
+                            istros.
+                        </li>
+                        <li>
+                            EX: ejecución y cálculo de direcciones efectivas.
+                        </li>
+                        <li>
+                            MEM: acceso a memoria.
+                        </li>
+                        <li>
+                            WB: postescritura.
+                        </li>
+                    </ol>
                 </div>
             </div>
         </div>
